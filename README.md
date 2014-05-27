@@ -39,7 +39,7 @@ test.suite('Demo Suite', {
 
 `example.js` within this repository contains an extensive node.js example.
 
-![node.js screenshot](http://websperts.com/testjs/node.png)
+![node.js screenshot](http://websperts.com/testjs/node-screenshot.png)
 
 ### Browser
 
@@ -54,11 +54,11 @@ test.suite('Demo Suite', {
 
 `example.html` within this repository contains an extensive browser example.
 
-![Browser screenshot](http://websperts.com/testjs/browser.png)
+![Browser screenshot](http://websperts.com/testjs/browser-screenshot.png)
 
 ## License
 
-Copyright (c) 2014 websperts  
+Copyright (c) 2014 [websperts](http://websperts.com/)  
 Licensed under the MIT license.
 
 See LICENSE for more info.
