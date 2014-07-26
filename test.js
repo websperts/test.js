@@ -1,16 +1,30 @@
 /*
  * test.js
- * http://testjs.org/
+ * https://github.com/websperts/test.js
  *
  * Copyright (c) 2014 websperts <hello@websperts.com>
  * Licensed under the MIT license.
  * https://github.com/websperts/test.js/blob/master/LICENSE
  */
 
-(function() {
-    var root = this;
-    var isNode = typeof module !== 'undefined' && module.exports;
+;(function(root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(function() {
+            return factory(root);
+        });
+    } else if (typeof exports === 'object') {
+        module.exports = factory(root);
+    } else {
+        root.test = factory(root);
+    }
+})(this, function(root) {
+
+    'use strict';
+
+    var isNode = typeof exports === 'object';
+
     var test = {
+
         cli: {
             reset: '\x1b[0m',
             bold: '\x1b[1m',
@@ -21,8 +35,9 @@
             yellow: '\x1b[33m',
             blue: '\x1b[34m',
             ok: '\u2714',
-            fail: '\u2718',
+            fail: '\u2718'
         },
+
         suite: function(name, units, setup, teardown) {
             test.start(name);
             if (typeof units === 'function') {
@@ -43,6 +58,7 @@
             }
             test.end();
         },
+
         start: function(name) {
             if (isNode) {
                 console.log(test.cli.bold + test.cli.black + test.cli.underscore + name + test.cli.reset);
@@ -50,9 +66,11 @@
                 console.group(name);
             }
         },
+
         end: function() {
             console[isNode ? 'log' : 'groupEnd']();
         },
+
         ok: function(expression, expection, name) {
             var result = expression === expection;
             if (isNode) {
@@ -71,13 +89,10 @@
                 console.info('Result: ' + expression);
                 console.groupEnd();
             }
+
         }
-    }
-    if (isNode) {
-        module.exports = test;
-        root.test = test;
-        isNode = true;
-    } else {
-        root.test = test;
-    }
-})();
+    };
+
+    return test;
+
+});

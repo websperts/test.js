@@ -56,6 +56,13 @@ test.suite('Demo Suite', {
 
 ![Browser screenshot](http://websperts.com/testjs/browser-screenshot.png)
 
+## Changelog
+
+* 0.0.2
+	* AMD support
+* 0.0.1
+	* Initial version
+
 ## License
 
 Copyright (c) 2014 [websperts](http://websperts.com/)  
