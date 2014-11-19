@@ -1,0 +1,21 @@
+{
+  "name": "test-js",
+  "version": "0.0.2",
+  "description": "A simple console API based unit test suite",
+  "main": "test.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/websperts/test.js.git"
+  },
+  "keywords": [
+    "test",
+    "unit",
+    "test"
+  ],
+  "author": "websperts <hello@websperts.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/websperts/test.js/issues"
+  },
+  "homepage": "https://github.com/websperts/test.js"
+}
