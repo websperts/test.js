@@ -58,6 +58,10 @@ test.suite('Demo Suite', {
 
 ## Changelog
 
+* 0.0.3
+	* Bower support
+	* npm support
+	* Remove black CLI color to support dark themes
 * 0.0.2
 	* AMD support
 * 0.0.1
