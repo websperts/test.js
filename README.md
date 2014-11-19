@@ -2,6 +2,15 @@
 
 A simple console API based unit test suite running on node.js and the browser, making testing simple and fun (again). It’s not meant to be a feature-rich testing framework but made for simple and lightweight unit tests.
 
+
+## Download
+
+To get going with test.js you can:
+
+- [Download the latest release](https://github.com/websperts/test.js/archive/master.zip)
+- [Install with Bower](http://bower.io/): `bower install test-js`
+- [Install with npm](https://www.npmjs.org/): `npm install test-js`
+
 ## Usage
 
 ### Creating suites and tests
@@ -58,6 +67,8 @@ test.suite('Demo Suite', {
 
 ## Changelog
 
+* 0.0.4
+	* Update docs
 * 0.0.3
 	* Bower support
 	* npm support
