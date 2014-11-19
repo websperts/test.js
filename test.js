@@ -1,5 +1,5 @@
-/*
- * test.js
+/**
+ * @preserve test.js
  * https://github.com/websperts/test.js
  *
  * Copyright (c) 2014 websperts <hello@websperts.com>
@@ -29,7 +29,6 @@
             reset: '\x1b[0m',
             bold: '\x1b[1m',
             underscore: '\x1b[4m',
-            black: '\x1b[30m',
             red: '\x1b[31m',
             green: '\x1b[32m',
             yellow: '\x1b[33m',
@@ -61,7 +60,7 @@
 
         start: function(name) {
             if (isNode) {
-                console.log(test.cli.bold + test.cli.black + test.cli.underscore + name + test.cli.reset);
+                console.log(test.cli.bold + test.cli.underscore + name + test.cli.reset);
             } else {
                 console.group(name);
             }
